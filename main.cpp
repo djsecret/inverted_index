@@ -9,7 +9,8 @@
 using namespace std;
 
 //const char* sourcefile = "DNA5M.txt";
-const char* sourcefile = "test.txt";
+
+const char* sourcefile = "/home/ubuntu/c++/data/test.txt";
 const int gramLength = 8;
 
 int main()
@@ -46,7 +47,7 @@ int main()
         num++;
     }
 
-    ofstream out("index.txt");
+    ofstream out("/home/ubuntu/c++/output/index.txt");
     vector<int*> positions;//save every <pos,offsets...>
     for(set<string>::iterator iter = grams.begin(); iter != grams.end(); ++iter)//for every gram
     {
